@@ -1,37 +1,75 @@
 .service-card {
   overflow: hidden;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 0;
+  border: 1px solid rgba(10, 61, 98, 0.12);
+  background: linear-gradient(180deg, #ffffff 0%, #f4fbff 100%);
+  box-shadow: 0 12px 30px rgba(6, 45, 73, 0.12);
+  transition: transform 0.32s ease, box-shadow 0.32s ease, border-color 0.32s ease;
 }
 
 .service-img-wrap {
-  height: 210px;
+  position: relative;
+  height: 280px;
   overflow: hidden;
+  background: radial-gradient(circle at 20% 20%, #f7fdff 0%, #e6f4fb 100%);
+}
+
+.service-img-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5, 27, 44, 0.35), rgba(5, 27, 44, 0));
+  opacity: 0.65;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .service-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: saturate(1.05) contrast(1.05);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 40px rgba(6, 45, 73, 0.2);
+  border-color: rgba(0, 183, 194, 0.45);
 }
 
 .service-card:hover .service-img {
-  transform: scale(1.08);
+  transform: scale(1.1);
+  filter: saturate(1.14) contrast(1.08);
+}
+
+.service-card:hover .service-img-wrap::after {
+  opacity: 0.3;
 }
 
 .service-content {
-  padding: 1.15rem;
+  padding: 1.2rem 1.2rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .service-content h4 {
   color: var(--primary-dark);
-  font-size: 1.08rem;
+  font-size: 1.1rem;
   font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.2rem;
 }
 
 .service-content p {
-  margin: 0.7rem 0 0.95rem;
+  margin: 0.65rem 0 1rem;
   color: var(--text-muted);
+  line-height: 1.6;
 }
 
 .service-badge {
@@ -41,7 +79,37 @@
   font-size: 0.84rem;
   font-weight: 600;
   color: #0a7f68;
-  background: #e9faf5;
+  background: linear-gradient(90deg, #e8fbf5 0%, #eaf8ff 100%);
+  border: 1px solid rgba(10, 127, 104, 0.15);
   border-radius: 999px;
   padding: 0.4rem 0.75rem;
+  margin-top: auto;
+}
+
+.service-img-wrap.full-image {
+  height: 310px;
+  padding: 0.2rem;
+}
+
+.service-img.full-image {
+  object-fit: contain;
+}
+
+.service-card:hover .service-img.full-image {
+  transform: none;
+  filter: saturate(1.08) contrast(1.05);
+}
+
+.service-card:hover .service-img-wrap.full-image::after {
+  opacity: 0.2;
+}
+
+@media (max-width: 767px) {
+  .service-img-wrap {
+    height: 250px;
+  }
+
+  .service-img-wrap.full-image {
+    height: 280px;
+  }
 }

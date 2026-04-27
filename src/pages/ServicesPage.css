@@ -124,3 +124,8 @@
 .product-chip svg {
   color: #00e5ff;
 }
+
+.aquarium-services-row .reveal-wrap {
+  height: 100%;
+  width: 100%;
+}

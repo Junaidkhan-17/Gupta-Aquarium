@@ -27,11 +27,11 @@ function ServicesPage() {
               <h2 className="section-title">Aquarium Services</h2>
             </div>
           </ScrollReveal>
-          <div className="row g-4">
+          <div className="row g-4 aquarium-services-row">
             {aquariumServices.map((service) => (
-              <div className="col-md-6 col-xl-3" key={service.title}>
-                <ScrollReveal>
-                  <ServiceCard {...service} />
+              <div className="col-md-6 col-xl-3 d-flex" key={service.title}>
+                <ScrollReveal className="w-100 h-100">
+                  <ServiceCard {...service} fullImage />
                 </ScrollReveal>
               </div>
             ))}
