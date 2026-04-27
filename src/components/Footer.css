@@ -1,0 +1,143 @@
+.site-footer {
+  background: linear-gradient(145deg, #051e2e, #0d1113, #05131d);
+  color: rgba(255, 255, 255, 0.92);
+  position: relative;
+  padding: 1rem 0 0.6rem;
+  height: auto;
+}
+
+.site-footer h5 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.site-footer p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.col-md-5 img {
+  width: 140px;
+  height: auto;
+}
+
+.col-md-5 h5 {
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.col-md-5 p {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+} 
+
+.footer-contact-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-logo {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 1rem;
+}
+
+.social-list {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-list a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.13);
+  transition: var(--transition);
+}
+
+.social-list a:hover {
+  transform: translateY(-4px);
+  background: var(--accent);
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  text-align: right;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  margin-bottom: 0.55rem;
+}
+
+.contact-list a,
+.contact-list span {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  margin-top: 0.7rem;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+/* 🔥 Target all icons */
+.contact-list li svg {
+  font-size: 22px;
+  color: white;
+
+  min-width: 20px; /* keeps alignment clean */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.contact-list li:hover svg {
+  color: var(--primary);
+  transform: scale(1.1);
+  font-size: 24px;
+}
+
+.webdock-logo {
+  position: absolute;
+  bottom: 50px;
+  right: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 9999;     /* stays above everything */
+}
+
+
+/* Optional: style text */
+.webdock-logo h4 {
+  margin: 0;
+  font-size: 12px;
+  color: #fff; /* adjust based on background */
+  opacity: 0.8;
+}
+
+/* Logo image */
+.webdock-logo img.webdock {
+  width: 96px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.webdock-logo img.webdock:hover {
+  transform: scale(1.08);
+}

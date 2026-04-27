@@ -1,0 +1,73 @@
+.contact-section {
+  background: #f9fcff;
+}
+
+.contact-card {
+  padding: 1.4rem;
+  height: 100%;
+}
+
+.contact-card h3 {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.contact-card p {
+  color: var(--text-muted);
+}
+
+.contact-card ul {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.contact-card li {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 0.85rem;
+  align-items: center;
+}
+
+.contact-card li svg {
+  color: var(--accent);
+}
+
+.contact-card a,
+.contact-card span {
+  color: var(--text-main);
+}
+
+.map-placeholder {
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+}
+
+.map-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 320px;
+  transition: transform 0.35s ease-in-out;
+}
+
+.map-placeholder:hover img {
+  transform: scale(1.06);
+}
+
+.map-overlay {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(120deg, rgba(4, 36, 58, 0.88), rgba(0, 116, 128, 0.74));
+  color: var(--white);
+}
+
+.map-overlay p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+}

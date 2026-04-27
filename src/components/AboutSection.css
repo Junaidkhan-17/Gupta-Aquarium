@@ -1,0 +1,105 @@
+/* SECTION BACKGROUND */
+.about-section {
+  background: linear-gradient(180deg, #f7fcff 0%, #eef8ff 100%);
+}
+.section-top {
+  color: black;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+
+/* TEXT */
+.section-text {
+  color: var(--text-muted);
+  line-height: 2.8;
+  font-size: 20px;
+}
+
+/* IMAGE CONTAINER */
+.about-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 570px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+/* LIGHT OVERLAY (fixed visibility issue) */
+
+
+/* GLASS CARD */
+.about-highlights {
+  position: relative;
+  z-index: 2;
+
+  padding: 1.8rem;
+  width: 90%;
+  max-width: 420px;
+
+  /* ✅ Balanced glass effect (visible by default) */
+  background: rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(2px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 18px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER (enhancement only, not required for visibility) */
+.about-highlights:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-5px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* ITEMS */
+.highlight-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.highlight-item:last-child {
+  margin-bottom: 0;
+}
+
+/* ICON */
+.highlight-item svg {
+  font-size: 2.2rem;
+  color: black;
+  margin-top: 0.3rem;
+  transition: var(--transition);
+}
+
+.highlight-item:hover svg {
+  color: var(--primary);
+  transform: scale(1.08);
+}
+
+/* TEXT (always visible now) */
+.highlight-item h5 {
+  margin: 0 0 0.3rem;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.highlight-item p {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}

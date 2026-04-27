@@ -1,0 +1,109 @@
+:root {
+  --primary: #0a3d62;
+  --primary-dark: #052b45;
+  --accent: #00b7c2;
+  --accent-soft: #83e8ee;
+  --bg-main: #f4f8fb;
+  --text-main: #122433;
+  --text-muted: #4d6477;
+  --white: #ffffff;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --shadow-soft: 0 10px 30px rgba(12, 54, 87, 0.12);
+  --shadow-card: 0 8px 24px rgba(7, 40, 65, 0.12);
+  --transition: all 0.3s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #f8fcff 0%, #edf6fb 50%, #f5fbff 100%);
+  color: var(--text-main);
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-space {
+  padding: 5.5rem 0;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: clamp(1.8rem, 2.8vw, 2.5rem);
+  color: var(--primary-dark);
+  margin-bottom: 0.9rem;
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-head {
+  margin-bottom: 2.2rem;
+}
+
+.card-premium {
+  border: 1px solid rgba(8, 63, 96, 0.08);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+}
+
+.card-premium:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 16px 36px rgba(9, 50, 79, 0.2);
+}
+
+.page-banner {
+
+  padding: 6rem 0 5rem;
+  color: var(--white);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.page-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(4, 29, 49, 0.85), rgba(0, 126, 139, 0.65));
+  z-index: -1;
+}
+
+.page-banner h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: 4rem;
+}
+
+.page-banner h5 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.page-banner p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  .section-space {
+    padding: 4rem 0;
+  }
+}
