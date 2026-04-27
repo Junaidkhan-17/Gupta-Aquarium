@@ -1,7 +1,7 @@
 .about-banner {
   background-image: url("https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=1800&q=80");
   height: 600px;
-text-align: center;
+  text-align: center;
 }
 
 /*.gallery-card {
@@ -66,4 +66,43 @@ text-align: center;
   margin: 0;
   font-size: 1rem;
   opacity: 0.85;
+}
+
+@media (max-width: 991px) {
+  .about-banner {
+    height: auto;
+    min-height: 460px;
+    padding: 5rem 0 3.5rem;
+  }
+
+  .about-banner h1 {
+    margin-top: 2rem;
+    font-size: clamp(2rem, 7.5vw, 3rem);
+  }
+
+  .about-banner h5 {
+    font-size: clamp(1rem, 3.8vw, 1.4rem);
+  }
+
+  .about-banner p {
+    font-size: clamp(1rem, 4.2vw, 1.4rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-card img {
+    height: 260px;
+  }
+
+  .gallery-content {
+    padding: 0.8rem;
+  }
+
+  .gallery-content h5 {
+    font-size: 1.1rem;
+  }
+
+  .gallery-content p {
+    font-size: 0.9rem;
+  }
 }

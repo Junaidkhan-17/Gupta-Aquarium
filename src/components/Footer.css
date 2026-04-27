@@ -141,3 +141,72 @@
 .webdock-logo img.webdock:hover {
   transform: scale(1.08);
 }
+
+@media (max-width: 991px) {
+  .footer-contact-col {
+    justify-content: flex-start;
+  }
+
+  .contact-list {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .contact-list li {
+    justify-content: flex-start;
+  }
+
+  .webdock-logo {
+    position: static;
+    align-items: flex-start;
+    margin-top: 0.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-footer {
+    padding: 1.2rem 0 0.8rem;
+  }
+
+  .site-footer h5,
+  .col-md-5 h5 {
+    font-size: 1.3rem;
+  }
+
+  .site-footer p,
+  .col-md-5 p {
+    font-size: 0.92rem;
+  }
+
+  .col-md-5 img {
+    width: 110px;
+  }
+
+  .social-list a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact-list li {
+    align-items: flex-start;
+    gap: 0.55rem;
+  }
+
+  .contact-list a,
+  .contact-list span {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .contact-list li svg {
+    font-size: 18px;
+  }
+
+  .webdock-logo h4 {
+    font-size: 10px;
+  }
+
+  .webdock-logo img.webdock {
+    width: 82px;
+  }
+}

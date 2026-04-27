@@ -18,6 +18,11 @@ function Navbar() {
     collapse.hide();
   }, []);
 
+  const handleNavLinkClick = useCallback(() => {
+    closeNavbarMenu();
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [closeNavbarMenu]);
+
   return (
     <nav className="navbar navbar-expand-lg sticky-top premium-navbar">
       <div className="container">
@@ -48,7 +53,7 @@ function Navbar() {
                   className={({ isActive }) =>
                     `nav-link premium-nav-link ${isActive ? "active" : ""}`
                   }
-                  onClick={closeNavbarMenu}
+                  onClick={handleNavLinkClick}
                 >
                   {link.title}
                 </NavLink>

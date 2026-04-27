@@ -103,3 +103,56 @@
   color: rgb(255, 255, 255);
   font-size: 1rem;
 }
+
+@media (max-width: 991px) {
+  .section-top {
+    font-size: clamp(2rem, 6vw, 2.6rem);
+  }
+
+  .section-text {
+    line-height: 1.8;
+    font-size: 1.05rem;
+  }
+
+  .about-image {
+    min-height: 440px;
+    height: auto;
+    padding: 1.4rem 0;
+  }
+
+  .about-highlights {
+    width: min(92%, 430px);
+  }
+}
+
+@media (max-width: 576px) {
+  .section-top {
+    margin-bottom: 1rem;
+  }
+
+  .about-image {
+    min-height: 380px;
+  }
+
+  .about-highlights {
+    padding: 1rem;
+  }
+
+  .highlight-item {
+    gap: 0.7rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .highlight-item svg {
+    font-size: 1.5rem;
+    margin-top: 0.15rem;
+  }
+
+  .highlight-item h5 {
+    font-size: 1rem;
+  }
+
+  .highlight-item p {
+    font-size: 0.85rem;
+  }
+}
