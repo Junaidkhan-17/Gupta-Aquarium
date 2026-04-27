@@ -1,10 +1,23 @@
+import { useCallback } from "react";
 import { NavLink } from "react-router-dom";
+import Collapse from "bootstrap/js/dist/collapse";
 import { FiPhoneCall } from "react-icons/fi";
 import { businessInfo, navLinks } from "../data/siteData";
 import guptabgremove from "../assets/images/guptabgremove.png";
 import "./Navbar.css";
 
 function Navbar() {
+  const closeNavbarMenu = useCallback(() => {
+    const navbarCollapseEl = document.getElementById("navbarMain");
+
+    if (!navbarCollapseEl || !navbarCollapseEl.classList.contains("show")) {
+      return;
+    }
+
+    const collapse = Collapse.getOrCreateInstance(navbarCollapseEl);
+    collapse.hide();
+  }, []);
+
   return (
     <nav className="navbar navbar-expand-lg sticky-top premium-navbar">
       <div className="container">
@@ -35,6 +48,7 @@ function Navbar() {
                   className={({ isActive }) =>
                     `nav-link premium-nav-link ${isActive ? "active" : ""}`
                   }
+                  onClick={closeNavbarMenu}
                 >
                   {link.title}
                 </NavLink>
