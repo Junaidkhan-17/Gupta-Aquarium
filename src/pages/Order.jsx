@@ -163,7 +163,7 @@ Items:
 ${itemsText}
     `;
 
-    const whatsappNumber = "919372435215";
+    const whatsappNumber = "919372435214";
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
     setTimeout(() => {

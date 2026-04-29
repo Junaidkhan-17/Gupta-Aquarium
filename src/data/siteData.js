@@ -41,7 +41,7 @@ export const businessInfo = {
     "We offer a wide variety of ornamental fish, birds, dogs, and small pets, along with high-quality aquariums, fish tanks, and accessories. Whether you are a beginner or an experienced pet owner, our team ensures the best products and genuine advice for all your pet needs.",
   contact: {
     location: "Near Gol Bazar, Gaddi Godam, Nagpur",
-    phone: "9372435215",
+    phone: "9372435214",
     email: "guptanilesh18876@gmail.com"
   }
 };
