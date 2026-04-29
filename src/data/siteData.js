@@ -49,7 +49,8 @@ export const businessInfo = {
 export const navLinks = [
   { title: "Home", path: "/" },
   { title: "About", path: "/about" },
-  { title: "Services", path: "/services" }
+  { title: "Services", path: "/services" },
+  { title: "Order", path: "/order" }
 ];
 
 export const heroImage =

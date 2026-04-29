@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
+import OrderPage from "./pages/Order";
 
 function ScrollToTopOnRouteChange() {
   const { pathname } = useLocation();
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/order" element={<OrderPage />} />
         </Routes>
       </main>
       <Footer />
