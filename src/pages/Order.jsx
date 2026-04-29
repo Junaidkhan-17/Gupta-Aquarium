@@ -6,6 +6,7 @@ import {
   categoryData,
   petServices,
 } from "../data/siteData";
+import "./Order.css";
 
 const OrderPage = () => {
   const [form, setForm] = useState({
@@ -171,7 +172,7 @@ ${itemsText}
       Swal.fire({
         icon: "success",
         title: "Order Submitted",
-        text: "Redirecting to WhatsApp...",
+        text: "Click OK to Submit Order Directly on Whatsapp",
       }).then(() => {
         window.open(url, "_blank");
       });
@@ -179,10 +180,10 @@ ${itemsText}
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 order-page">
       <h2 className="text-center mb-4">Place Your Order</h2>
 
-      <form className="card p-4 shadow" onSubmit={handleSubmit}>
+      <form className="card p-4 shadow order-form" onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
@@ -239,9 +240,8 @@ ${itemsText}
                 }}
               >
                 <div
-                  className="mb-2 d-flex align-items-center justify-content-center"
+                  className="mb-2 d-flex align-items-center justify-content-center order-product-image-wrap"
                   style={{
-                    height: "220px",
                     width: "100%",
                     padding: "4px",
                     borderRadius: "8px",
@@ -260,7 +260,7 @@ ${itemsText}
                   />
                 </div>
                 <p className="mb-0 small">{item.name}</p>
-                <div className="d-flex align-items-center justify-content-between mt-2">
+                <div className="d-flex align-items-center justify-content-between mt-2 order-card-actions">
                   <button
                     type="button"
                     className={`btn btn-sm ${selected ? "btn-outline-danger" : "btn-outline-warning"}`}
@@ -268,7 +268,7 @@ ${itemsText}
                   >
                     {selected ? "Remove" : "Add"}
                   </button>
-                  <div className="d-flex align-items-center">
+                  <div className="d-flex align-items-center order-qty-controls">
                     <button
                       type="button"
                       className="btn btn-outline-secondary btn-sm"
@@ -277,7 +277,7 @@ ${itemsText}
                     >
                       -
                     </button>
-                    <span className="mx-2 small" style={{ minWidth: "20px", textAlign: "center" }}>
+                    <span className="mx-2 small order-qty-value" style={{ minWidth: "20px", textAlign: "center" }}>
                       {selected ? quantity : 0}
                     </span>
                     <button
@@ -310,8 +310,8 @@ ${itemsText}
           <div className="mb-3">
             <h6 className="mb-2">Set Quantity For Selected Items</h6>
             {form.selectedItems.map((item) => (
-              <div className="d-flex align-items-center mb-2" key={item.name}>
-                <span className="me-2 small" style={{ minWidth: "200px" }}>
+              <div className="d-flex align-items-center mb-2 order-selected-row" key={item.name}>
+                <span className="me-2 small order-selected-name">
                   {item.name}
                 </span>
                 <button
@@ -324,8 +324,7 @@ ${itemsText}
                 <input
                   type="number"
                   min="1"
-                  className="form-control mx-2"
-                  style={{ maxWidth: "90px" }}
+                  className="form-control mx-2 order-selected-input"
                   value={item.quantity}
                   onChange={(e) =>
                     handleItemQuantityChange(item.name, e.target.value)
@@ -351,7 +350,7 @@ ${itemsText}
           {loading ? (
             <>
               <span className="spinner-border spinner-border-sm me-2"></span>
-              Processing...
+              Processing...  
             </>
           ) : (
             "Submit Order on WhatsApp"
