@@ -42,7 +42,9 @@ export const businessInfo = {
   contact: {
     location: "Near Gol Bazar, Gaddi Godam, Nagpur",
     phone: "9372435214",
-    email: "guptanilesh18876@gmail.com"
+    email: "guptanilesh18876@gmail.com",
+    mapUrl:
+      "https://www.google.com/maps/place/Gupta+Aquarium+And+Pets+Shop+in+Nagpur/@21.1611844,79.0841293,20.48z/data=!4m12!1m5!3m4!2zMjHCsDA5JzM5LjkiTiA3OcKwMDUnMDMuMiJF!8m2!3d21.1610867!4d79.0842181!3m5!1s0x3bd4c0e7208023b1:0x407a107ccff78157!8m2!3d21.1612123!4d79.0843027!16s%2Fg%2F11b5yx7ppb?hl=en&entry=ttu&g_ep=EgoyMDI2MDQyNy4wIKXMDSoASAFQAw%3D%3D"
   }
 };
 
@@ -456,3 +458,4 @@ export const aboutGallery = [
       
   }
 ];
+

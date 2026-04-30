@@ -211,3 +211,17 @@
     width: 82px;
   }
 }
+
+.contact-list li a:hover {
+  color: var(--primary);
+}
+
+.location-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
