@@ -3,8 +3,8 @@ import { MdPhone, MdEmail } from "react-icons/md";
 import { businessInfo } from "../data/siteData";
 import aquafooterbgremove from "../assets/images/aquafooterbgremove.png";
 import newfooterbgremove from "../assets/images/newfooterbgremove.png";
-import guptabgremove from "../assets/images/guptabgremove.png";
-import webdockwhite from "../assets/images/webdockwhite.png";
+import guptanewlogo from "../assets/images/guptanewlogo.png";
+import webdockblacklogo from "../assets/images/webdockblacklogo.png";
 import "./Footer.css";
 
 function Footer() {
@@ -14,7 +14,7 @@ function Footer() {
         <div className="row g-4">
           <div className="col-md-5">
             <img
-              src={aquafooterbgremove}
+              src={guptanewlogo}
               className="footer-logo"
               alt="Aquarium"
             />
@@ -56,7 +56,7 @@ function Footer() {
               className="link"
               aria-label="Back to top"
             >
-              <img src={webdockwhite} className="webdock" alt="Powered by" />
+              <img src={webdockblacklogo} className="webdock" alt="Powered by" />
             </a>
           </div>
         </div>

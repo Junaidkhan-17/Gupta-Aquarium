@@ -1,6 +1,6 @@
 .site-footer {
-  background: linear-gradient(145deg, #051e2e, #0d1113, #05131d);
-  color: rgba(255, 255, 255, 0.92);
+  background: linear-gradient(145deg, #ffffff, #ffffff, #ffffff);
+  color: rgba(0, 0, 128, 0.8);
   position: relative;
   padding: 1rem 0 0.6rem;
   height: auto;
@@ -9,10 +9,11 @@
 .site-footer h5 {
   font-weight: 700;
   font-size: 1.8rem;
+  color: rgb(8, 8, 50);
 }
 
 .site-footer p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 128, 0.8);
 }
 
 .col-md-5 img {
@@ -21,14 +22,14 @@
 }
 
 .col-md-5 h5 {
-  color: rgb(255, 255, 255);
+  color: rgb(8, 8, 50);
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 0.4rem;
 }
 
 .col-md-5 p {
-  color: rgb(255, 255, 255);
+  color: rgb(8, 8, 50);
   font-size: 1rem;
   margin-bottom: 0.7rem;
 } 
@@ -56,7 +57,7 @@
   display: grid;
   place-items: center;
   color: var(--white);
-  background: rgba(255, 255, 255, 0.13);
+  background: rgb(0, 0, 0);
   transition: var(--transition);
 }
 
@@ -83,7 +84,7 @@
 
 .contact-list a,
 .contact-list span {
-  color: rgba(255, 255, 255, 0.88);
+  color: rgb(8, 8, 50);
   font-size: 1rem;
 }
 
@@ -97,7 +98,7 @@
 /* 🔥 Target all icons */
 .contact-list li svg {
   font-size: 22px;
-  color: white;
+  color: rgb(0, 0, 0);
 
   min-width: 20px; /* keeps alignment clean */
   transition: all 0.3s ease;
@@ -106,7 +107,7 @@
 /* Hover effect */
 .contact-list li:hover svg {
   color: var(--primary);
-  transform: scale(1.1);
+  transform: scale(1.5);
   font-size: 24px;
 }
 
@@ -124,14 +125,14 @@
 /* Optional: style text */
 .webdock-logo h4 {
   margin: 0;
-  font-size: 12px;
-  color: #fff; /* adjust based on background */
+  font-size: 18px;
+  color: #000000; /* adjust based on background */
   opacity: 0.8;
 }
 
 /* Logo image */
 .webdock-logo img.webdock {
-  width: 96px;
+  width: 116px;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -139,7 +140,7 @@
 
 /* Hover effect */
 .webdock-logo img.webdock:hover {
-  transform: scale(1.08);
+  transform: scale(1.50);
 }
 
 @media (max-width: 991px) {
