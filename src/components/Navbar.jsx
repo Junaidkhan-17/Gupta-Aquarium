@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Collapse from "bootstrap/js/dist/collapse";
 import { FiPhoneCall } from "react-icons/fi";
 import { businessInfo, navLinks } from "../data/siteData";
-import guptabgremove from "../assets/images/guptabgremove.png";
+import guptanewlogo from "../assets/images/guptanewlogo.png";
 import "./Navbar.css";
 
 function Navbar() {
@@ -28,7 +28,7 @@ function Navbar() {
       <div className="container">
         <NavLink to="/" className="navbar-brand brand-wrap">
           <span className="brand-name">
-            <img src={guptabgremove} className="nav-img" alt="" />
+            <img src={guptanewlogo} className="nav-img" alt="" />
           </span>
         </NavLink>
 
